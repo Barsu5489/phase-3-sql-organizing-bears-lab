@@ -14,8 +14,18 @@ end
 
 def selects_oldest_bear_and_returns_name_and_age
   "Write your SQL query here"
+  "SELECT bears.name, bears.age
+  FROM bears
+  WHERE name IS NOT NULL AND age IS NOT NULL
+  ORDER BY age DESC
+  LIMIT 1;"
 end
 
 def select_youngest_bear_and_returns_name_and_age
   "Write your SQL query here"
+  "SELECT bears.name, bears.age
+  FROM bears
+  WHERE name IS NOT NULL AND age IS NOT NULL
+  ORDER BY age ASC
+  LIMIT 1;"
 end
